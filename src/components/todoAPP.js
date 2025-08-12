@@ -2,7 +2,9 @@ import { useState } from "react";
 import styles from "./todo.module.css";
 
 function TodoApp() {
+
     const [tasks, setTasks] = useState([]);
+
     const [formData, setFormData] = useState({
         task: "",
         category: ""
@@ -108,6 +110,6 @@ function TodoApp() {
             </div>
         </div>
     );
-}
+};
 
 export default TodoApp;
